@@ -1,1 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#Numero {
+  text-align: center;
+  font-size: 100px;
+}
+#Pinta-Down {
+  text-align: end;
+  padding-right: 15px;
+}
+#Pinta-UP {
+  padding-left: 15px;
+}
+
+#Pinta-Down,
+#Pinta-UP {
+  font-size: 60px;
+}
+
+#Carta {
+  border-radius: 20px;
+}
