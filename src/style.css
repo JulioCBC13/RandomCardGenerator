@@ -1,22 +1,44 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-#Numero {
+body {
+  background-color: green;
+}
+.card {
   text-align: center;
-  font-size: 100px;
-}
-#Pinta-Down {
-  text-align: end;
-  padding-right: 15px;
-}
-#Pinta-UP {
-  padding-left: 15px;
-}
 
-#Pinta-Down,
-#Pinta-UP {
+  margin: auto;
+  height: 400px;
+  width: 250px;
+  background-color: white;
+  padding-top: 200px;
+  border: 1px solid black;
+  padding: 0px;
   font-size: 60px;
+  justify-content: space-between;
 }
 
-#Carta {
-  border-radius: 20px;
+#number {
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#top {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+#bottom {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 20px;
+  transform: rotate(180deg);
+}
+
+#Generator {
+  position: relative;
+  margin-left: 47%;
+  margin-right: 57%;
 }

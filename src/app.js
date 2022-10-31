@@ -1,25 +1,14 @@
-/* eslint-disable */
 import "bootstrap";
 import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+import { Tooltip } from "bootstrap";
 
-window.onload = () => {
-  document.querySelector("#Carta").classList.add(generateRandomPintas());
-  document.querySelector("#Carta").innerHTML = generateRandomNumeros();
-};
+window.onload = function() {
+  const pintas = ["♠", "♣", "♥", "♦"];
 
-function generateRandomPintas() {
-  let pintas = ["Diamante", "Spadas", "Corazones", "Picas"];
-
-  let indexPintas = Math.floor(Math.random() * pintas.length);
-
-  return pintas[indexPintas];
-}
-
-let generateRandomNumeros = () => {
-  let numeros = [
+  const numeros = [
     "A",
     "2",
     "3",
@@ -35,7 +24,10 @@ let generateRandomNumeros = () => {
     "K"
   ];
 
-  let indexNumeros = Math.floor(Math.random() * numeros.length);
+  let randomNumber = numeros[Math.floor(Math.random() * numeros.length)];
+  let randomSymbol = pintas[Math.floor(Math.random() * pintas.length)];
 
-  return numeros[indexNumeros];
+  document.getElementById("top").innerHTML = randomSymbol;
+  document.getElementById("number").innerHTML = randomNumber;
+  document.getElementById("bottom").innerHTML = randomSymbol;
 };
